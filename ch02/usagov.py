@@ -41,9 +41,9 @@ tz_counts = clean_tz.value_counts()
 
 # print(tz_counts)
 
-# tz_counts[:10].plot(kind='barh', rot=0)
+tz_counts[:10].plot(kind='barh', rot=0)
 import matplotlib.pyplot as plt
-# plt.show()
+plt.show()
 
 results = Series([x.split()[0] for x in frame.a.dropna()])
 print(results.value_counts()[:8])
